@@ -1,12 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eindopdracht UX</title>
+
+    <title>Redesign Schoolwebsite</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+    
+    <header class="MainBackground">
+        <div class="wrapper mainMargin">
+        <div class="logo"> 
+            <p>LOGO WEBSITE</p>
+        </div>
+        <div class="navPart wrapper">
+            <div class="schoolInfo wrapper">
+                <div class="gegevens">
+                <ul class="globalListStyle wrapper">
+                    <li>09/355.35.33</li>
+                    <li>naam@school.be</li>
+                </ul>
+            </div>
+            <div class="searchbar">
+                <input type="text" placeholder="Zoeken">
+                <button onclick="location.href='#'" style="cursor: pointer;">GO</button>
+            </div>
+            </div>
+            <nav class="mainNav">
+                <ul class="globalListStyle wrapper">
+                    <li><a class="active" href="#">Home</a></li>
+
+
+                    <li class="dropdown">
+                        <a href="#">Onze School 
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-content globalListStyle">
+                        <li><a href="#">Studie Aanbod</a></li>
+                        <li><a href="#">Praktische Informatie</a></li>
+                        <li><a href="#">Het Team</a></li>
+                        <li><a href="#">Visie en Schoolbeleid</a></li>
+                    </ul>
+                    </li>
+
+                    
+                    <li class="dropdown"><a href="#">Media 
+                        <i class="fa fa-caret-down"></i></a></li>
+                    <li><a href="#">Inschrijven</a></li>
+                    <li class="dropdown">
+                        <a href="#">Contact <i class="fa fa-caret-down"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </header>
+
+    <div class="content wrapper">
+        <section class="studentSection mainMargin wrapper">
+            <div class="missie">
+                <h1 class="MainBackground">Missie en visie van onze school</h1>
+                <img src="./assets/img/jerry-zhang-CPmrdbbpnXg-unsplash.jpg" alt="groepsfoto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit tellus eget enim elementum, in dictum ante sagittis. Sed sit amet orci tempus, pharetra odio commodo, rhoncus tortor. Sed scelerisque mollis ipsum et ultricies. Proin id dui ut est blandit condimentum ut eget eros. Vestibulum eleifend erat eu quam cursus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit tellus eget enim elementum, in dictum ante sagittis. Sed sit amet orci tempus, pharetra odio commodo, rhoncus tortor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit tellus eget enim elementum, in dictum ante sagittis. Sed sit amet orci tempus, pharetra odio commodo, rhoncus tortor. Sed scelerisque mollis ipsum et ultricies. Proin id dui ut est blandit condimentum ut eget eros. Vestibulum eleifend erat eu quam cursus.</p>
+
+            </div>
+        <div class="rechterkolom wrapper">
+                <div class="info">
+                        <h1 class="MainBackground">Praktische informatie voor leerlingen</h1>
+                        <p><i class="fas fa-file-pdf"></i><a href="#">Start van het nieuwe schooljaar</a></p>
+                        <p><i class="fas fa-file-pdf"></i><a href="#">Maaltijden in de middag</a></p>
+                        <p><i class="fas fa-file-pdf"></i><a href="#">Sport en Ontspanning</a></p>
+                        <p><i class="fas fa-file-pdf"></i><a href="#">Naschoolse opvang</a></p>
+                        <p><i class="fas fa-file-pdf"></i><a href="#">Benodigde lesmateriaal</a></p>
+                        <p><i class="fas fa-file-pdf"></i><a href="#">Lessenrooster en schoolreglement</a></p>
+                    </div>
+                    <div class="login">
+                        <h1 class="MainBackground">Login studenten</h1>
+                        <div class="userSection">
+                                <label for="username">Gebruikersnaam</label>
+                                <input type="text" name="user" id="username" placeholder="naamAchternaam@student.school.be">
+                        </div>
+                        <div class="passwordSection">
+                                <label for="password">Wachtwoord</label>
+                                <input type="text" name="pass" id="password">
+                        </div>
+                        
+                        <button onclick="location.href='#'" style="cursor: pointer;">Aanmelden</button>
+                    </div>
+        </div>
+        </section>
+        <section class="wrapper" id="informatie"> 
+            <div id="HoofdInformatie" onclick="location.href='#'" style="cursor: pointer;">
+                <img src="./assets/img/adolescent-attractive-backpack-1462630.jpg" alt="inschrijven">
+                <p>Schrijf je nu in!</p>
+            </div>
+            <div class="wrapper" id="extraInformatie">
+                <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+                    <img src="./assets/img/apple-beautiful-blond-hair-1326947.jpg" alt="Studie aanbod">
+                    <p>Studie aanbod</p>
+                </div>
+                <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+                        <img src="./assets/img/active-athletes-ball-2116469.jpg" alt="Activiteiten">
+                        <p>Activiteiten</p>
+                    </div>
+                    <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+                            <img src="./assets/img/adult-bangkok-businessmen-1571877.jpg" alt="Het Team">
+                            <p>Het Team</p>
+                        </div>
+                        <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+                                <img src="./assets/img/celebration-colorful-colourful-1684187.jpg" alt="Evenementen">
+                                <p>Evenementen</p>
+                            </div>
+            </div>
+        </section>
+        <section id="nieuws" class="mainMargin">
+            <div class="split">
+                    <h1>Nieuws</h1>
+                    <h2><a href="#"> Nieuwsoverzicht <i class="fas fa-arrow-right"></i></a></h2>
+            </div>
+           
+        <div class="articles wrapper">
+            <div class="newscard">
+                <img src="./assets/img/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" alt="newsitem">
+                <p class="datum">1/08/2019</p>
+                <h3>Nieuwstitel</h3>
+                <p class="inleiding">inleiding</p>
+                <p class="lees"><a href="#">Lees meer...</a></p>
+            </div>
+            <div class="newscard">
+                    <img src="./assets/img/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" alt="newsitem">
+                    <p class="datum">1/08/2019</p>
+                        <h3>Nieuwstitel</h3>
+                        <p class="inleiding">inleiding</p>
+                        <p class="lees"><a href="#">Lees meer...</a></p>
+                </div>
+                <div class="newscard">
+                        <img src="./assets/img/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" alt="newsitem">
+                        <p class="datum">1/08/2019</p>
+                        <h3>Nieuwstitel</h3>
+                        <p class="inleiding">inleiding</p>
+                        <p class="lees"><a href="#">Lees meer...</a></p>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <footer class="MainBackground">
+        <div class="wrapper mainMargin">
+        <div class="footcolumn">
+            <h1>Aanbod</h1>
+            <ul class="globalListStyle">
+                <li><a href="#">Studie aanbod</a></li>
+                <li><a href="#">Leerlingenbegeleiding</a></li>
+                <li><a href="#">Inschrijvingen</a></li>
+            </ul>
+        </div>
+
+        <div class="footcolumn">
+                <h1>Praktisch</h1>
+                <ul class="globalListStyle">
+                    <li><a href="#">Locatie</a></li>
+                    <li><a href="#">Voorzieningen</a></li>
+                    <li><a href="#">Lesmaterialen en kluisje</a></li>
+                    <li><a href="#">Lessenrooster en schoolreglement</a></li>
+                </ul>
+            </div>
+
+            <div class="footcolumn">
+                    <h1>Onze Partners</h1>
+                    <ul class="globalListStyle">
+                        <li><a href="#">Damiaan actie</a></li>
+                        <li><a href="#">Vrij CLB</a></li>
+                        <li><a href="#">Steunpunt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footcolumn">
+                        <p class="SecondaryColor school">Naam School</p>
+                        <p>straatnaam + nummer</p>
+                        <p>postcode + gemeente</p>
+                        <p>Telefoon</p>
+                        <p>mail-adres</p>
+                    </div>
+                </div>
+    </footer>
 </body>
 </html>

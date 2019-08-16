@@ -1,0 +1,41 @@
+/***      zoekbalk header    ***/
+
+header .searchbar input{
+    margin-top: 42px;
+    background: white;
+    border: none;
+    width: 200px;
+    height: 10px;
+    padding: 10px 30px;
+    border-radius: 6px;
+}
+
+
+
+/***       login student         ***/
+
+
+.content .login{
+    height: 180px;
+    border: solid 1px #70707056;
+}
+
+.content .login h1{
+height: 40px;
+color: white;
+padding: 15px 30px 0;
+}
+
+.content .login label{
+    font-weight: bold;
+    margin: 35px 20px;
+}
+
+.content .login input{
+    margin: 15px 35px 0;
+    width: 250px;
+}
+.content .login .passwordSection label{
+    margin-right: 48px;
+   
+}

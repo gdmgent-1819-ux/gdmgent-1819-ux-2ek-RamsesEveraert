@@ -1,9 +1,220 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merriweather:300,400,700,900');
 @import url('variables.css');
-@import url('base.css');
-
-@import url('components/flex-grid.css');
 @import url('components/buttons.css');
+@import url('components/cards.css');
 @import url('components/forms.css');
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+  width: 100%;
+}
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.MainBackground{
+    background: var( --Main-color);
+}
+
+.SecondaryColor {
+    color: var( --Secondary-color);
+}
+
+.mainMargin{
+    margin: 0 250px;
+}
+
+.globalListStyle {
+    list-style: none;
+
+}
+.globalListStyle a {
+    color: White;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height:170px;
+    color: White;
+}
+
+
+header .logo{
+   height: 100%;
+   width: 35%;
+   font-size: 250%;
+}
+header .logo p{
+    margin: 65px 100px 65px 0;
+}
+
+
+ header .navPart{
+   height: 100%;
+    width: 55%;
+    flex-direction: column;
+}
+
+header .navPart .schoolInfo{
+    width: 100%;
+    height: 85px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .navPart .schoolInfo .gegevens{
+    height: 43px;
+    width: 45%;
+    margin-top: 45px;
+}
+
+header .navPart .schoolInfo .gegevens ul li{
+    font-size: 130%;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+
+header .navPart .mainNav{
+    height: 85px;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navPart .mainNav .active{
+    background: var( --Secondary-color);
+    padding: 4px 15px;
+    border-radius: 6px;
+}
+
+header .navPart .mainNav ul li{
+    margin: 10px 8px;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+header .navPart .mainNav ul li a:hover{
+    color:var(--Important-color);
+}
+
+
+/* dropdown lijkt niet te werken */
+
+header .navPart .mainNav .dropdown {
+    overflow: hidden;
+}
+
+header .navPart .mainNav .dropdown a:hover .dropdown-content {
+    display: block;
+}
+
+header .navPart .mainNav .dropdown .dropdown-content{
+    display: none;
+}
+
+.content {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.content .studentSection{
+   justify-content: space-between;
+   height: 725px;
+   width: 100%;
+}
+
+.content .missie{
+    height: 100%;
+    width: 800px;
+    border: solid 1px #70707056;
+    
+}
+.content .missie h1, .content .info h1{
+    height: 70px;
+    color: white;
+    padding: 40px 30px 0;
+}
+
+.content .missie img {
+    height: 320px;
+    width: 740px;
+    margin: 20px 30px;
+    object-fit: cover;
+}
+
+.content .missie p {
+    width: 740px;
+    margin: 10px 30px;
+    line-height: 16pt;
+}
+
+.content .rechterkolom{
+    width: 500px;
+    height: 725px;
+}
+
+.content .info{
+    height: 500px;
+    border: solid 1px #70707056;
+}
+
+.content .info p{
+    width: 440px;
+    margin: 35px 30px;
+    line-height: 20pt;
+}
+
+.content .info p a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.content .info p a:hover {
+    color: var( --Secondary-color);
+}
+
+
+
+footer {
+    width: 100%;
+    height: 170px;
+    color: white;
+}
+
+footer .footcolumn ul li{
+    margin: 5px;
+}
+
+footer h1{
+    color: var( --Secondary-color);
+}
+
+footer .footcolumn ul li a:hover{
+    color: var( --Secondary-color);
+}
+
+
+footer .footcolumn h1, footer .footcolumn .school{
+margin: 15px 0;
+}
