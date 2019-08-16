@@ -1,0 +1,106 @@
+.content #HoofdInformatie{
+    width: 50%;
+    height: 600px;
+}
+
+.content #HoofdInformatie img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    filter: grayscale(60%);
+}
+
+.content #HoofdInformatie p{
+    position: relative;
+    top: -300px;
+    left: 370px;
+    color:white;
+    font-size: 250%;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.content #extraInformatie{
+    width: 50%;
+    height: 600px;
+}
+.content #extraInformatie .card {
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+.content #extraInformatie .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(60%);
+}
+
+.content #extraInformatie .card img:hover {
+    transform-origin: 50% 50%;
+  transition: transform .25s, visibility .25s ease-in;
+  transform: scale(1.5);
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+
+.content #extraInformatie .card p{
+    position: relative;
+    top: -150px;
+    left: 150px;
+    color: white;
+    font-size: 250%;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.content #nieuws {
+    width: 100%;
+}
+
+.content #nieuws .split {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.content #nieuws h1{
+color: var( --Main-color);
+}
+.content #nieuws h2{
+    font-size: 100%;
+    text-align: center;
+    background: var( --Secondary-color);
+    width: 170px;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+ h2 a{
+   text-decoration: none;
+   color: white;
+}
+.content #nieuws .newscard {
+    width: 30%;
+    clear: both;
+}
+.content #nieuws .newscard p {
+    margin: 10px 0;
+}
+.content #nieuws .newscard .datum{
+    color: var( --Secondary-color);
+    position: relative;
+    right: -330px;
+}
+
+
+.content #nieuws .newscard .lees a{
+    text-decoration: none;
+    color: var( --Secondary-color);
+    font-weight: bold;
+}
+
+.content #nieuws .newscard .lees a:hover{
+    color: var( --Important-color);
+    font-weight: bold;
+}
